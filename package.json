@@ -1,0 +1,44 @@
+{
+  "name": "hexapod",
+  "version": "1.0.0",
+  "description": "Hexapod Robot using Raspberry Pi and johnny-five",
+  "author": {
+    "name": "Josh Gerdes <josh@joshgerdes.com>",
+    "email": "josh@joshgerdes.com"
+  },
+  "homepage": "http://joshgerdes.com",
+  "license": "MIT",
+  "keywords": [
+   "robot",
+   "robotics",
+   "hexapod",
+   "raspberry pi",
+   "raspberrypi",
+   "pi-zero",
+   "PCA9685",
+   "MG996R",
+   "ps3",
+   "nodejs",
+   "node-js",
+   "johnny-five",
+   "raspi-io", 
+   "dualshock-controller"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "dualshock-controller": "^1.1.1",
+    "johnny-five": "^0.11.7",
+    "raspi-io": "^8.1.0",
+    "temporal": "^0.6.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "node-gyp": "^3.6.2",
+    "node-pre-gyp": "^0.6.38"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "install:hidraw": "npm install node-hid --driver=hidraw --build-from-source",
+    "git:hard": "git fetch --all && git reset --hard origin/master"
+  }
+}
